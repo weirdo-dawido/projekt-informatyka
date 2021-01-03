@@ -10,7 +10,7 @@ body{
 }
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 90px;
     color: rgb(32, 131, 109);
 }
 a{
@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 h2{
-    color: rgb(46, 49, 197);
+    color: rgb(211, 79, 17);
 }
 .container{
     padding-top: 200px;
