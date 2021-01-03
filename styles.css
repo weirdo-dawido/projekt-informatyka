@@ -1,11 +1,24 @@
-sdasdasdasdasdadasdasdasdasdasdasdasdASdsa
-datasdas
-dataas
-datalistd
-asdas
-datalistasd
-sampdas
-
-datalistas
-datalistdas
-das
+body{
+    background-image:;
+    -webkit-backgroud-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    color: rgb(0, 0, 0);
+    margin: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(32, 131, 109);
+}
+a{
+    color: rgb(32, 131, 109);
+    font-size: 30px;
+    text-decoration: none;
+}
+h2{
+    color: rgb(46, 49, 197);
+}
+.container{
+    padding-top: 200px;
+}
