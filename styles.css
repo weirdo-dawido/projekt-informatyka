@@ -1,9 +1,11 @@
 body{
-    background-image:;
+     color: rgb(32, 131, 109);
+
+);
     -webkit-backgroud-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
-    color: rgb(0, 0, 0);
+    color: rgb();
     margin: 100px;
 }
 h1{
