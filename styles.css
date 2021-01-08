@@ -1,5 +1,5 @@
 body{
-     color: rgb(32, 131, 109);
+     color: rgb(211, 79, 17);
 
 );
     -webkit-backgroud-size: auto, cover;
@@ -10,19 +10,93 @@ body{
 }
 h1{
     text-align: center;
-    font-size: 90px;
-    color: rgb(32, 131, 109);
+    font-size: 35px;
+    color: rgb(211, 79, 17);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(211, 79, 17);
+}
+h3{
+    text-align: center;
+    font-size: 37px;
+    color: black;
+}
+h4{
+    text-align: center;
+    font-size: 42px;
+    color: black;
+}
+h5{
+    text-align: center;
+    font-size: 42px;
+    color: black;
 }
 a{
-    color: rgb(32, 131, 109);
+    color: rgb(0, 74, 97);
     font-size: 30px;
     text-decoration: none;
 }
 h2{
     color: rgb(211, 79, 17);
-    color: rgb(251, 51, 51);kurwyyyyy na dźwigu
-    color: rgb(32, 131, 109)
 }
 .container{
     padding-top: 200px;
+}
+.kolumna{
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 130px;
+    font-size: 19px;
+}
+.kolumna1{
+    float: left;
+    margin: 11px;
+    width: 250px;
+    height: 300px;
+    font-size: 19px;
+}
+.kolumna2{
+    float: left;
+    font-size: 15px;
+    margin: 11px;
+    width: 250px;
+    height: 150px;
+    font-size: 19px;
+}
+.kolumna3{
+    float: left;
+    margin: 11px;
+    width: 250px;
+    height: 150px;
+    font-size: 19px;
+}
+.kolumna4{
+    float: left;
+    margin: 11px;
+    width: 250px;
+    height: 185px;
+    font-size: 19px;
+}
+.bmenu li a{
+    font-size: 17px;
+}
+.columna1{
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 215px;
+    font-size: 19px;
+}
+.columna{
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 130px;
+    font-size: 19px;
+}
+.cmenu li a{
+    font-size: 17px;
 }

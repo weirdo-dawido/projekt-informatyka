@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+		<meta name="keywords" content="Skidek"/>
+        <title>Skidek</title>
+			<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const bazaDanych = {
+					"waw": "loty-z-waw.html",
+					"wmi": "loty-z-wmi.html",
+					"krk": "loty-z-krk.html",
+					"gdn": "loty-z-gdn.html",
+					"ktw": "loty-z-ktw.html",
+					"wro": "loty-z-wro.html",
+					"poz": "loty-z-poz.html",
+					"rze": "loty-z-rze.html",
+					"szz": "loty-z-szz.html",
+					"bzg": "loty-z-bzg.html",
+					"luz": "loty-z-luz.html",
+					"lcj": "loty-z-lcj.html",
+					"szy": "loty-z-szy.html",
+					"ieg": "loty-z-ieg.html"
+					
+				}
+	
+				const searchBar = document.getElementById("searchBar");
+				const searchButton = document.getElementById("searchButton");
+	
+				searchButton.addEventListener("click", e => {
+					let sel = searchBar.value;
+					if (bazaDanych.hasOwnProperty((sel))) {
+						console.log(window.location);
+						let destinationURL = new URL(bazaDanych[sel], window.location.href);
+						let destination = destinationURL.toString();
+						window.location.assign(destination);
+					}
+				});
+			});
+		</script>
+		
+    </head>
+	<body>
+		<div id="content">
+			<header>
+				<h1>Skidek</h1>
+				<h2>Twoja wymarzona podróż!</h2>
+				<nav>
+					<select id="searchBar">
+						<option selected>Wybierz lotnisko</option>
+						<option value="waw">Warszawa-Chopina (WAW)</option>
+						<option value="wmi">Warszawa-Modlin (WMI)</option>
+						<option value="krk">Kraków-Balice (KRK)</option>
+						<option value="gdn">Gdańsk-Rębiechowo (GDN)</option>
+						<option value="ktw">Katowice-Pyrzowice (KTW)</option>
+						<option value="wro">Wrocław-Starachowice (WRO)</option>
+						<option value="poz">Poznań-Ławica (POZ)</option>
+						<option value="rze">Rzeszów-Jasionka (RZE)</option>
+						<option value="szz">Szczecin-Goleniów (SZZ)</option>
+						<option value="bzg">Bydgoszcz-Szwederowo (BZG)</option>
+						<option value="luz">Lublin-Świdnik (LUZ)</option>
+						<option value="lcj">Łódź-Lublinek (LCJ)</option>
+						<option value="szy">Olsztyn-Mazury (SZY)</option>
+						<option value="ieg">Zielona Góra-Babimost (IEG)</option>
+					
+					</select>
+					<button id="searchButton">Szukaj!</button>
+				</nav>
+			</header>
+      <contact>
+        
+
+			<footer style="text-align: center">
+				&copy; Głodek &amp Kliński
+				<p>
+					Infolinia 22 251 61 21</br>
+				</p>
+				<p>
+					Poniedziałek 06:00 - 22:00</br>
+					Wtorek 06:00 - 22:00</br>
+					Środa 06:00 - 22:00</br>
+					Czwartek 06:00 - 22:00</br>
+					Piątek 06:00 - 22:00</br>
+					Sobota 09:00 - 17:00</br>
+					Niedziela 09:00 - 17:00</br>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

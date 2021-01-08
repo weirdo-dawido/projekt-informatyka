@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+		<meta name="keywords" content="Skidek"/>
+        <title>Skidek</title>
+			<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const bazaDanych = {
+					"waw": "loty-z-waw.html",
+					"wmi": "loty-z-wmi.html",
+					"krk": "loty-z-krk.html",
+					"gdn": "loty-z-gdn.html",
+					"ktw": "loty-z-ktw.html",
+					"wro": "loty-z-wro.html",
+					"poz": "loty-z-poz.html",
+					"rze": "loty-z-rze.html",
+					"szz": "loty-z-szz.html",
+					"bzg": "loty-z-bzg.html",
+					"luz": "loty-z-luz.html",
+					"lcj": "loty-z-lcj.html",
+					"szy": "loty-z-szy.html",
+					"ieg": "loty-z-ieg.html"
+					
+				}
+	
+				const searchBar = document.getElementById("searchBar");
+				const searchButton = document.getElementById("searchButton");
+	
+				searchButton.addEventListener("click", e => {
+					let sel = searchBar.value;
+					if (bazaDanych.hasOwnProperty((sel))) {
+						console.log(window.location);
+						let destinationURL = new URL(bazaDanych[sel], window.location.href);
+						let destination = destinationURL.toString();
+						window.location.assign(destination);
+					}
+				});
+			});
+		</script>
+		
+    </head>
+	<body>
+		<div id="content">
+			<header>
+				<h1>Skidek</h1>
+				<h2>Twoja wymarzona podróż!</h2>
+				<nav>
+					<select id="searchBar">
+						<option>Wybierz lotnisko</option>
+						<option selected value="waw">Warszawa-Chopina (WAW)</option>
+						<option value="wmi">Warszawa-Modlin (WMI)</option>
+						<option value="krk">Kraków-Balice (KRK)</option>
+						<option value="gdn">Gdańsk-Rębiechowo (GDN)</option>
+						<option value="ktw">Katowice-Pyrzowice (KTW)</option>
+						<option value="wro">Wrocław-Starachowice (WRO)</option>
+						<option value="poz">Poznań-Ławica (POZ)</option>
+						<option value="rze">Rzeszów-Jasionka (RZE)</option>
+						<option value="szz">Szczecin-Goleniów (SZZ)</option>
+						<option value="bzg">Bydgoszcz-Szwederowo (BZG)</option>
+						<option value="luz">Lublin-Świdnik (LUZ)</option>
+						<option value="lcj">Łódź-Lublinek (LCJ)</option>
+						<option value="szy">Olsztyn-Mazury (SZY)</option>
+						<option value="ieg">Zielona Góra-Babimost (IEG)</option>
+					
+					</select>
+					<button id="searchButton">Szukaj!</button></br>
+
+				</nav>
+			</header>
+			<header>
+				<h3>Wszystkie kierunki dostępne z lotniska Warszawa-Chopina</h3>
+			</header>
+			<header>
+				<h4>Europa</h4>
+			</header>
+	  
+		<div>
+			<div id="container">
+				<div class="kolumna">Albania
+					<ul class=bmenu>
+						<li><a href="waw-tia.html">Tirana (TIA)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Austria
+					<ul class=bmenu>
+						<li><a href="waw-vie.html">Wiedeń (VIE)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Belgia
+					<ul class=bmenu>
+						<li><a href="waw-bru.html">Bruksela (BRU)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Białoruś
+					<ul class=bmenu>
+						<li><a href="waw-msq.html">Mińsk (MSQ)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Bułgaria
+					<ul class=bmenu>
+						<li><a href="waw-sof.html">Sofia (SOF)</a></li>
+						<li><a href="waw-boj.html">Burgas (BOJ)</a></li>
+						<li><a href="waw-var.html">Warna (VAR)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Chorwacja
+					<ul class=bmenu>
+						<li><a href="waw-zag.html">Zagrzeb (ZAG)</a></li>
+						<li><a href="waw-dbv.html">Dubrownik (DBV)</a></li>
+						<li><a href="waw-puy.html">Pula (PUY)</a></li>
+						<li><a href="waw-spu.html">Split (SPU)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Czechy
+					<ul class=bmenu>
+						<li><a href="waw-prg.html">Praga (PRG)</a></li>
+						<li><a href="waw-osr.html">Ostrawa (OSR)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Dania
+					<ul class=bmenu>
+						<li><a href="waw-cph.html">Kopenhaga (CPH)</a></li>
+						<li><a href="waw-bll.html">Billund (BLL)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Estonia
+					<ul class=bmenu>
+						<li><a href="waw-tll.html">Tallinn (TLL)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna">Finlandia
+					<ul class=bmenu>
+						<li><a href="waw-hel.html">Helsinki (HEL)</a></li>
+						<li><a href="waw-oul.html">Oulu (OUL)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Francja
+					<ul class=bmenu>
+						<li><a href="waw-cdg.html">Paryż (CDG)</a></li>
+						<li><a href="waw-ory.html">Paryż-Orly (ORY)</a</li>
+						<li><a href="waw-lys.html">Lyon (LYS)</a></li>
+						<li><a href="waw-nce.html">Nicea (NCE)</a></li>
+						<li><a href="waw-mrs.html">Marsylia (MRS)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Grecja
+					<ul class=bmenu>
+						<li><a href="waw-ath.html">Ateny (ATH)</a></li>
+						<li><a href="waw-skg.html">Saloniki (SKG)</a></li>
+						<li><a href="waw-kva.html">Kawala (KVA)</a></li>
+						<li><a href="waw-cfu.html">Korfu (CFU)</a></li>
+						<li><a href="waw-chq.html">Chania (CHQ)</a></li>
+						<li><a href="waw-her.html">Heraklion (HER)</a></li>
+						<li><a href="waw-jtr.html">Santorini (JTR)</a></li>
+						<li><a href="waw-jmk.html">Mykonos (JMK)</a></li>
+						<li><a href="waw-rho.html">Rodos (RHO)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Hiszpania
+					<ul class=bmenu>
+						<li><a href="waw-bcn.html">Barcelona-El Prat (BCN)</a></li>
+						<li><a href="waw-mad.html">Madryt-Bajaras (MAD)</a></li>
+						<li><a href="waw-bio.html">Bilbao (BIO)</a></li>
+						<li><a href="waw-vlc.html">Walencja (VLC)</a></li>
+						<li><a href="waw-alc.html">Alicante (ALC)</a></li>
+						<li><a href="waw-agp.html">Malaga (AGP)</a></li>
+						<li><a href="waw-svq.html">Sewilla (SVQ)</a></li>
+						<li><a href="waw-pmi.html">Palma de Mallorca (PMI)</a></li>
+						<li><a href="waw-tfs.html">Teneryfa-Południe (TFS)</a></li>
+						<li><a href="waw-fue.html">Fuerteventura (FUE)</a></li>
+						<li><a href="waw-lpa.html">Gran Canaria (LPA)</a></li>
+						<li><a href="waw-ace.html">Lanzarote (ACE)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Holandia
+					<ul class=bmenu>
+						<li><a href="waw-ams.html">Amsterdam-Schipol (AMS)</a></li>
+						<li><a href="waw-ein.html">Eindhoven (EIN)</a></li>
+						<li><a href="waw-grq.html">Groningen (GRQ)</a></li>
+						<li><a href="waw-mst.html">Maastricht (MST)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Irlandia
+					<ul class=bmenu>
+						<li><a href="waw-dub.html">Dublin (DUB)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna2">Islandia
+					<ul class=bmenu>
+						<li><a href="waw-kef.html">Reykjavik (KEF)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna2">Kazachstan
+					<ul class=bmenu>
+						<li><a href="waw-nqz.html">Astana (NQZ)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna2">Litwa
+					<ul class=bmenu>
+						<li><a href="waw-vno.html">Wilno (VNO)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna2">Luksemburg
+					<ul class=bmenu>
+						<li><a href="waw-lux.html">Luksemburg (LUX)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna2">Łotwa
+					<ul class=bmenu>
+						<li><a href="waw-rix.html">Ryga (RIX)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Malta
+					<ul class=bmenu>
+						<li><a href="waw-mla.html">Malta-Valletta (MLA)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Mołdawia
+					<ul class=bmenu>
+						<li><a href="waw-kiv.html">Kiszyniów (KIV)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Niemcy
+					<ul class=bmenu>
+						<li><a href="waw-ber.html">Berlin (BER)</a></li>
+						<li><a href="waw-ham.html">Hamburg (HAM)</a></li>
+						<li><a href="waw-haj.html">Hanower (HAJ)</a></li>
+						<li><a href="waw-dtm.html">Dortmund (DTM)</a></li>
+						<li><a href="waw-dus.html">Düsseldorf (DUS)</a></li>
+						<li><a href="waw-cgn.html">Kolonia-Bonn (CGN)</a></li>
+						<li><a href="waw-muc.html">Monachium (MUC)</a></li>
+						<li><a href="waw-drs.html">Drezno (DRS)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Norwegia
+					<ul class=bmenu>
+						<li><a href="waw-osl.html">Oslo-Gardermoen (OSL)</a></li>
+						<li><a href="waw-svg.html">Stavanger (SVG)</a></li>
+						<li><a href="waw-bgo.html">Bergen (BGO)</a></li>
+						<li><a href="waw-trd.html">Trondheim (TRD)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Polska
+					<ul class=bmenu>
+						<li><a href="waw-gdn.html">Gdańsk (GDN)</a></li>
+						<li><a href="waw-krk.html">Kraków (KRK)</a></li>
+						<li><a href="waw-ktw.html">Katowice (KTW)</a></li>
+						<li><a href="waw-wro.html">Wrocław (WRO)</a></li>
+						<li><a href="waw-poz.html">Poznań (POZ)</a></li>
+						<li><a href="waw-szz.html">Szczecin (SZZ)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna3">Portugalia
+					<ul class=bmenu>
+						<li><a href="waw-lis.html">Lizbona (LIS)</a></li>
+						<li><a href="waw-opo.html">Porto (OPO)</a></li>
+						<li><a href="waw-pdl.html">Ponta Delgada (PDL)</a></li>
+						<li><a href="waw-fnc.html">Funchal (FNC)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna3">Rosja
+					<ul class=bmenu>
+						<li><a href="waw-svo.html">Moskwa (SVO)</a></li>
+						<li><a href="waw-led.html">Sankt-Petersburg (LED)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna3">Rumunia
+					<ul class=bmenu>
+						<li><a href="waw-otp.html">Bukareszt (OTP)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna3">Słowacja
+					<ul class=bmenu>
+						<li><a href="waw-bts.html">Bratysława (BTS)</a></li>
+						<li><a href="waw-ksc.html">Koszyce (KSC)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna3">Szwajcaria
+					<ul class=bmenu>
+						<li><a href="waw-zrh.html">Zurych (ZRH)</a></li>
+						<li><a href="waw-gva.html">Genewa (GVA)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna4">Szwecja
+					<ul class=bmenu>
+						<li><a href="waw-arn.html">Sztokholm-Arlanda (ARN)</a></li>
+						<li><a href="waw-got.html">Goteborg (GOT)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna4">Ukraina
+					<ul class=bmenu>
+						<li><a href="waw-kbp.html">Kijów-Boryspol (KBP)</a></li>
+						<li><a href="waw-lwo.html">Lwów (LWO)</a></li>
+						<li><a href="waw-hrk.html">Charków (HRK)</a></li>
+						<li><a href="waw-ods.html">Odessa (ODS)</a></li>
+						<li><a href="waw-vin.html">Winnica (VIN)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna4">Węgry
+					<ul class=bmenu>
+						<li><a href="waw-bud.html">Budapeszt (BUD)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna4">Wielka Brytania
+					<ul class=bmenu>
+						<li><a href="waw-lhr.html">Londyn-Heathrow (LHR)</a></li>
+						<li><a href="waw-ltn.html">Londyn-Luton (LTN)</a></li>
+						<li><a href="waw-lgw.html">Londyn-Gatwick (LGW)</a></li>
+						<li><a href="waw-man.html">Manchester (MAN)</a></li>
+						<li><a href="waw-gla.html">Glasgow (GLA)</a></li>
+						<li><a href="waw-edi.html">Edynburg (EDI)</a></li>
+					</ul>
+				</div>
+				<div class="kolumna1">Włochy
+					<ul class=bmenu>
+						<li><a href="waw-foc.html">Rzym-Fiumicino (FCO)</a></li>
+						<li><a href="waw-mxp.html">Mediolan-Malpensa (MXP)</a></li>
+						<li><a href="waw-bgy.html">Mediolan-Bergamo (BGY)</a></li>
+						<li><a href="waw-vce.html">Wenecja (VCE)</a></li>
+						<li><a href="waw-rmi.html">Rimini (RMI)</a></li>
+						<li><a href="waw-nap.html">Neapol (NAP)</a></li>
+						<li><a href="waw-bri.html">Bari (BRI)</a></li>
+						<li><a href="waw-cta.html">Katania (CTA)</a></li>
+						<li><a href="waw-pmo.html">Palermo (PMO)</a></li>
+						<li><a href="waw-cag.html">Cagliari (CAG)</a></li>
+						<li><a href="waw-aho.html">Alghero (AHO)</a></li>
+					</ul>
+				</div>
+			   </div>
+			</div>
+		</div>
+
+		<header>
+			<h5>Bliski Wschód</h5>
+		</header>
+		<div>
+			<div id="container"> 
+				<div class="columna1">Cypr
+					<ul class=cmenu>
+						<li><a href="waw-lca.html">Larnaka (LCA)</a></li>
+						<li><a href="waw-pho.html">Pafos (PHO)</a></li>
+					</ul>
+				</div>
+				<div class="columna1">Turcja
+					<ul class=cmenu>
+						<li><a href="waw-ist.html">Stambuł (IST)</a></li>
+						<li><a href="waw-adb.html">Izmir (ADB)</a></li>
+						<li><a href="waw-bjv.html">Bodrum (BJV)</a></li>
+						<li><a href="waw-ayt.html">Antalya (AYT)</a></li>
+					</ul>
+				</div>
+				<div class="columna1">Iran
+					<ul class=cmenu>
+						<li><a href="waw-ika.html">Teheran (IKA)</a></li>
+					</ul>
+				</div>
+				<div class="columna1">Izrael
+					<ul class=cmenu>
+						<li><a href="waw-tlv.html">Tel Aviv (TLV)</a></li>
+						<li><a href="waw-etm.html">Eilat (ETM)</a></li>
+					</ul>
+				</div>
+				<div class="columna1">Katar
+					<ul class=cmenu>
+						<li><a href="waw-doh.html">Doha (DOH)</a></li>
+					</ul>
+				</div>
+				<div class="columna">Liban
+					<ul class=cmenu>
+						<li><a href="waw-bey.html">Bejrut (BEY)</a></li>
+					</ul>
+				</div>
+				<div class="columna">Oman
+					<ul class=cmenu>
+						<li><a href="waw-mct.html">Maskat (MCT)</a></li>
+					</ul>
+				</div>
+				<div class="columna">Zjednoczone Emiraty Arabskie
+					<ul class=cmenu>
+						<li><a href="waw-dxb.html">Dubaj (DXB)</a></li>
+						<li><a href="waw-auh.html">Abu Zabi (AUH)</a></li>
+						<li><a href="waw-rkt.html">Ras Al Khaimah (RKT)</a></li>
+					</ul>
+				</div>
+		</div>
+				
+		</div>
+		
+	</body>
+</html>
