@@ -1,13 +1,20 @@
 body{
+    background-image: url(fantasy-niebo_90839-278\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 250px;
+    color: #fff;
+    font-family: 'Josefin Slab', Arial, sans-serif;
      color: rgb(211, 79, 17);
-
-);
     -webkit-backgroud-size: auto, cover;
     -moz-background-size: auto, cover;
     -o-background-size: auto, cover;
     color: rgb();
     margin: 100px;
 }
+    .bmenu li a:hover{ 
+        color: rgb(25, 163, 67);
+        padding-left: 10px;
+    }
 h1{
     text-align: center;
     font-size: 35px;
